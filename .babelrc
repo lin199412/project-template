@@ -8,7 +8,7 @@
                     "browsers": ["ie >=9"]
                 },
                 "useBuiltIns": "usage",
-                "debug": true
+                "debug": false
             }
         ]
     ],

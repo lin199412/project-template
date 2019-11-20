@@ -5,7 +5,7 @@
  * @event: 
  * @Date: 2019-11-19 09:50:41
  * @LastEditors: linweibin
- * @LastEditTime: 2019-11-20 09:43:24
+ * @LastEditTime: 2019-11-20 17:29:45
  */
 const webpack = require('webpack')
 const merge = require("webpack-merge")
@@ -16,6 +16,9 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = merge(baseWebpackConfig, {
   // webpack-dev-server相关配置
   devServer: {
+    // 终端打印信息配置
+    stats: 'errors-only',
+    //
     hot: true,
     host: process.env.HOST || '0.0.0.0',
     port: process.env.PORT || '8086',
